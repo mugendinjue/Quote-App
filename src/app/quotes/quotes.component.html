@@ -8,7 +8,7 @@
                 <li>
                     <div class="card">
                         <div class="card-header">
-                            {{quote.quote}}  <span id="date"><small>{{quote.postDate | date}} </small> </span><br>        
+                            {{quote.quote}}  <span id="date"><small>{{quote.postDate | dateCount}} days ago</small> </span><br>        
                             <button type="button" class="btn btn-secondary"  id="btnA"  (click) = 'move(i)'><small>View details</small></button> 
                         </div>
                         <div class="card-body" *ngIf = 'quote.show'>
