@@ -1,7 +1,23 @@
+<h1 style="text-align: center">*************** Quotes ***************</h1>
+<hr>
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-10">
+            <ul>
+                <li *ngFor = 'let quote of quotesArr'>
+                <div class="card">
+                    <div class="card-header">
+                        {{quote.quote}} <br>
+                       <p>Author : {{quote.author}}
+                        <button type="button" class="btn btn-secondary" id="btnA"><small>View details</small></button> </p>
+                    </div>
+                    <div class="card-body">
 
+                    </div>
+                </div>
+                <br>
+            </li>
+            </ul>
         </div>
     </div>
 </div>
