@@ -5,3 +5,6 @@ li {
 #btnA{
     float: right;
 }
+#date,#vote {
+    float: right;
+}
