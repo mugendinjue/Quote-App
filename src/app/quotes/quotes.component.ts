@@ -13,6 +13,12 @@ export class QuotesComponent implements OnInit {
     new Quotes (2,'denis','The Pessimist Sees Difficulty In Every Opportunity. The Optimist Sees Opportunity In Every Difficulty.',new Date(2019,5,10),0,0)
   ]
 
+  move(index){
+    this.quotesArr[index].show = !this.quotesArr[index].show;
+  }
+
+
+
   constructor() { }
 
   ngOnInit() {

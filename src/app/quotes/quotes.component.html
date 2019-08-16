@@ -1,21 +1,22 @@
+<hr>
 <h1 style="text-align: center">*************** Quotes ***************</h1>
 <hr>
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-10">
-            <ul>
-                <li *ngFor = 'let quote of quotesArr'>
-                <div class="card">
-                    <div class="card-header">
-                        {{quote.quote}}  <span id="date"><small>{{quote.postDate | date}} </small> </span><br>        
-                        <button type="button" class="btn btn-secondary" id="btnA"><small>View details</small></button> 
+            <ul *ngFor = 'let quote of quotesArr;let i = index'>
+                <li>
+                    <div class="card">
+                        <div class="card-header">
+                            {{quote.quote}}  <span id="date"><small>{{quote.postDate | date}} </small> </span><br>        
+                            <button type="button" class="btn btn-secondary"  id="btnA"  (click) = 'move(i)'><small>View details</small></button> 
+                        </div>
+                        <div class="card-body" *ngIf = 'quote.show'>
+                            <app-quote-details [showDetails] = 'quote'></app-quote-details>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <app-quote-details [showDetails] = 'quote'></app-quote-details>
-                    </div>
-                </div>
-                <br>
-            </li>
+                    <br>
+                </li>
             </ul>
         </div>
     </div>
