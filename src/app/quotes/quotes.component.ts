@@ -17,6 +17,14 @@ export class QuotesComponent implements OnInit {
     this.quotesArr[index].show = !this.quotesArr[index].show;
   }
 
+  removeDiary(willDelete,index){
+    if(willDelete){
+      let confirmation = confirm(`Are you sure you want to delete QUOTE?`);
+      if(confirmation){
+        this.quotesArr.splice(index,1);
+      }
+    }
+  }
 
 
   constructor() { }

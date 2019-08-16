@@ -12,7 +12,7 @@
                             <button type="button" class="btn btn-secondary"  id="btnA"  (click) = 'move(i)'><small>View details</small></button> 
                         </div>
                         <div class="card-body" *ngIf = 'quote.show'>
-                            <app-quote-details [showDetails] = 'quote'></app-quote-details>
+                            <app-quote-details [showDetails] = 'quote' (willDelete) = 'removeDiary($event,i)'></app-quote-details>
                         </div>
                     </div>
                     <br>
