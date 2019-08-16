@@ -26,6 +26,13 @@ export class QuotesComponent implements OnInit {
     }
   }
 
+  updateForm (quote){
+    let newId = this.quotesArr.length;
+    quote.id = newId + 1;
+    quote.postDate = new Date ;
+    this.quotesArr.push(quote);
+  }
+
 
   constructor() { }
 

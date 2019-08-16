@@ -12,7 +12,9 @@ export class QuoteFormComponent implements OnInit {
 
   @Output () sendData = new EventEmitter<Quotes>();
 
-  
+  sendForm (){
+    this.sendData.emit(this.newQuotes);
+  }
 
   constructor() { }
 
