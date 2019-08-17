@@ -6,9 +6,9 @@
         <div class="col-md-10">
             <ul *ngFor = 'let quote of quotesArr;let i = index'>
                 <li>
-                    <div class="card">
+                    <div class="card" >
                         <div class="card-header">
-                             <span>"{{quote.quote}}"</span>  <span id="date"><small>{{quote.postDate|dateCount}} days ago</small> </span><br>        
+                             <span id="qt" >"{{quote.quote}}"</span>  <span id="date"><small>{{quote.postDate|dateCount}} days ago</small> </span><br>        
                             <button type="button" class="btn btn-secondary"  id="btnA"  (click) = 'move(i)'><small>View details</small></button> 
                         </div>
                         <div class="card-body" *ngIf = 'quote.show'>
@@ -18,6 +18,12 @@
                     <br>
                 </li>
             </ul>
+        </div>
+        <div class="col-md-2" >
+            <div id="link">
+                <h4>For more inspiring quotes</h4>
+                <a href="https://lifehacks.io/life-quotes/"><img src="assets/link.png" alt=""></a>
+            </div>
         </div>
     </div>
 </div>
