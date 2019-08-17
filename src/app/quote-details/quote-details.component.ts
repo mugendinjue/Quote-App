@@ -10,10 +10,14 @@ export class QuoteDetailsComponent implements OnInit {
 
   @Input () showDetails : Quotes; 
   @Output () willDelete = new EventEmitter<boolean>();
+  
+
+  
 
   deleteDiary(done : boolean){
     this.willDelete.emit(done);
   }
+
 
   constructor() { }
 

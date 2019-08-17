@@ -1,2 +1,3 @@
-<p>Author : {{showDetails.author}} <span id="vote"> <small>Like : {{showDetails.like}} Dislike : {{showDetails.disLike}}</small> </span> </p>
+<p>Author : {{showDetails.author}} <span id="vote"> <small> <span (click) = 'addLike()'>Like : {{showDetails.like}}</span> <span> Dislike : {{showDetails.disLike}}</span> </small> </span> </p>
+<p>Uploaded By : {{showDetails.uploadedBy}} </p>
 <button class="btn btn-danger" (click) = 'deleteDiary(true)'>Delete</button>

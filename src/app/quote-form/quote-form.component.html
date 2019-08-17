@@ -4,15 +4,23 @@
             <form  (ngSubmit) = 'sendForm()'>
                 <div class="form-group">
                     <label for="author">Enter Author</label>
-                    <input type="text" class="form-control" name="author" id="author " placeholder="name"  [(ngModel)] = 'newQuotes.author' #author = 'ngModel' required>
+                    <input type="text" class="form-control" name="author" id="author " placeholder="Said by ..."  [(ngModel)] = 'newQuotes.author' #author = 'ngModel' required>
                     {{newQuotes.author}}
                     <div [hidden] = 'author.valid || author.pristine' class="alert alert-danger">
                         <small>Author name required</small>
                     </div>
                 </div>
                 <div class="form-group">
+                    <label for="uploadedBy">Your Name</label>
+                    <input type="text" class="form-control" name="uploadedBy" id="uploadedBy" placeholder="Your name ..."  [(ngModel)] = 'newQuotes.uploadedBy' #uploadedBy = 'ngModel' required>
+                    {{newQuotes.uploadedBy}}
+                    <div [hidden] = 'uploadedBy.valid || uploadedBy.pristine' class="alert alert-danger">
+                        <small>Your name required</small>
+                    </div>
+                </div>
+                <div class="form-group">
                     <label for="quote">Your Quote</label>
-                    <textarea name="quote" id="quote"  cols="3" rows="4" class="form-control" placeholder="Write quote" [(ngModel)] = 'newQuotes.quote' #quote = 'ngModel' required></textarea>
+                    <textarea name="quote" id="quote"  cols="3" rows="4" class="form-control" placeholder='"Write quote"' [(ngModel)] = 'newQuotes.quote' #quote = 'ngModel' required></textarea>
                     <div [hidden] = 'quote.valid || quote.pristine' class="alert alert-danger">
                         <small>Quote is required</small>
                     </div>
