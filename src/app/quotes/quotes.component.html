@@ -1,7 +1,9 @@
-<hr>
-<div class="container" id="top">
+
+<div class="jombotron-fluid" id="top">
+  <div class="card-header cen">
     <h1 style="text-align: center">***** Quotes *****</h1>
     <p> The home of great inspiring quotes</p>
+  </div>
 </div>
 <hr>
 <div class="container-fluid">
@@ -9,7 +11,7 @@
         <div class="col-md-10">
             <ul *ngFor = 'let quote of quotesArr;let i = index'>
                 <li>
-                    <div class="card" idea id="box" >
+                    <div class="card" >
                         <div class="card-header">
                              <span id="qt" appHighlight >"{{quote.quote}}"</span>  <span id="date"><small>{{quote.postDate|dateCount}} days ago</small> </span><br>
                             <button type="button" class="btn btn-secondary"  id="btnA"  (click) = 'move(i)'><small>View details</small></button>

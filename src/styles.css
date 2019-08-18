@@ -6,11 +6,11 @@
 
 
 body {
-    background-color: #9CA94B ;
-    /* background-image: url("assets/leaf.jpg");
+
+    background-image: url("assets/leaf.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed; */
+    background-attachment: fixed;
 }
 
 li {
@@ -23,8 +23,11 @@ li {
     float: right;
 }
 #top {
+    background-color: #1C2833;
+    height: 30vh;
     color: #50c9c3;
     text-align: center;
+    border-radius: 10px;
     font-family: 'Lexend Tera', sans-serif;
 }
 #qt {
@@ -54,4 +57,7 @@ li {
 }
 #box {
   border-radius: 10px;
+}
+#cen {
+  padding-top: 20px;
 }
