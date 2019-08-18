@@ -29,7 +29,9 @@ h1 {
 #link {
     position: fixed;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 60px;
+    background-color: #E0F561 ;
+    border-radius: 10px;
     font-family: 'Lexend Tera', sans-serif;
     font-family: 'Cutive Mono', monospace;
     font-family: 'Vidaloka', serif;
