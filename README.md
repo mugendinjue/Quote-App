@@ -1,6 +1,63 @@
+# Quotes Web-App
+
+#### A website page that users read Quotes and also add their quotes ,18 August 2019
+
+#### By **[mugendinjue](https://github.com/mugendinjue)**
+
+## Description
+
+On the site you can read quotes from other users post.You can also post your own quotes.
+
+## Setup/Installation Requirements
+
+* A browser
+* Internet
+* An editor (developers)
+* Fork the repo into your github account and later clone it into your local directory.
+* Install Angular.
+
+## Live link  
+
+https://mugendinjue.github.io/Quote-App/
+
+## Known Bugs
+
+some links may not be up to date.
+
+## Support and contact details
+
+Incase of questions and issues contact mugendinjue7@gmail.com.
+
+## License
+
+* MIT license 
+Copyright (c) 2019 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
 # Quotes
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.0.
+
+## Technologies Used
+
+Html, css (bootstrap),Angular CLI
 
 ## Development server
 
