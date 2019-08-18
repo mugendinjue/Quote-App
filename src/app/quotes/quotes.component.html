@@ -1,5 +1,8 @@
 <hr>
-<h1 style="text-align: center">*************** Quotes ***************</h1>
+<div class="container" id="top">
+    <h1 style="text-align: center">***** Quotes *****</h1>
+    <p> The home of great inspiring quotes</p>
+</div>
 <hr>
 <div class="container-fluid">
     <div class="row">
@@ -8,8 +11,8 @@
                 <li>
                     <div class="card" >
                         <div class="card-header">
-                             <span id="qt" >"{{quote.quote}}"</span>  <span id="date"><small>{{quote.postDate|dateCount}} days ago</small> </span><br>        
-                            <button type="button" class="btn btn-secondary"  id="btnA"  (click) = 'move(i)'><small>View details</small></button> 
+                             <span id="qt" appHighlight >"{{quote.quote}}"</span>  <span id="date"><small>{{quote.postDate|dateCount}} days ago</small> </span><br>
+                            <button type="button" class="btn btn-secondary"  id="btnA"  (click) = 'move(i)'><small>View details</small></button>
                         </div>
                         <div class="card-body" *ngIf = 'quote.show'>
                             <app-quote-details [showDetails] = 'quote' (willDelete) = 'removeDiary($event,i)' (willAdd) = likeAdd($event,i)  (willDlike) = likeDisAdd($event,i)></app-quote-details>
@@ -28,6 +31,6 @@
     </div>
 </div>
 <hr>
-<div class="container">
+<div class="container" id="form">
     <app-quote-form  (sendData) = 'updateForm($event)'></app-quote-form>
 </div>

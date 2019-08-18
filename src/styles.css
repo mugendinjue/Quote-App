@@ -5,6 +5,13 @@
 @import url('https://fonts.googleapis.com/css?family=Cutive+Mono|Lexend+Tera|Quicksand|Vidaloka&display=swap');
 
 
+body {
+    background-image: url("/assets/back.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 li {
     list-style: none;
 }
@@ -14,12 +21,15 @@ li {
 #date,#vote {
     float: right;
 }
-h1 {
+#top {
+    color: #50c9c3;
+    text-align: center;
     font-family: 'Lexend Tera', sans-serif;
 }
 #qt {
     font-family: 'Lexend Tera', sans-serif;
     font-family: 'Cutive Mono', monospace;
+    font-weight: bold;
 }
 .dt {
     font-family: 'Lexend Tera', sans-serif;
@@ -30,10 +40,14 @@ h1 {
     position: fixed;
     text-align: center;
     padding-top: 60px;
+    margin-right: 100PX;
     background-color: #E0F561 ;
     border-radius: 10px;
     font-family: 'Lexend Tera', sans-serif;
     font-family: 'Cutive Mono', monospace;
     font-family: 'Vidaloka', serif;
     font-family: 'Quicksand', sans-serif;
+}
+#form {
+  color: white;
 }

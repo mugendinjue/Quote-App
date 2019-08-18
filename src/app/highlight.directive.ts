@@ -6,14 +6,18 @@ import { Directive , ElementRef , HostListener} from '@angular/core';
 })
 export class HighlightDirective {
 
-  
+  numberOfClicks = 0;
+
+  @HostListener ('click') onclick(){
+    this.quoteColor(" #764ba2")
+  }
 
 
 
-  constructor(private elem:ElementRef) { this.elem.nativeElement.style.color='lightblue'; }
+  constructor(private elem:ElementRef) { }
 
-  // private quoteColor(action:string){
-  //   this.elem.nativeElement.style.color=action;
-  
+  private quoteColor(action:string){
+    this.elem.nativeElement.style.color=action;
+  }
 
 }
