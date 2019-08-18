@@ -52,3 +52,6 @@ li {
 #form {
   color: white;
 }
+#box {
+  border-radius: 10px;
+}
