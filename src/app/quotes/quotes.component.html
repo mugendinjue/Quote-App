@@ -6,8 +6,12 @@
   </div>
 </div>
 <hr>
-<div class="jumbotron" id="display">
-  <p  appHighlight *ngIf = 'quotesArr[0].like > 1' >{{quotesArr[0].quote}}</p>
+<div class="jumbotron" id="display" appHighlight>
+  <h2>Most Likes</h2>
+  <hr>
+  <br>
+  <p>{{quotesArr[0].quote}} ~~ {{quotesArr[0].author}}</p>
+  <p>Uploaded By : {{quotesArr[0].uploadedBy}}</p>
 </div>
 <div class="container-fluid">
     <div class="row">
