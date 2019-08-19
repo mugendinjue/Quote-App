@@ -2,10 +2,13 @@
 <div class="jombotron-fluid" id="top">
   <div class="card-header cen">
     <h1 style="text-align: center">***** Quotes *****</h1>
-    <p> The home of great inspiring quotes</p>
+    <p> The home to great inspiring quotes</p>
   </div>
 </div>
 <hr>
+<div class="jumbotron">
+  <p  appHighlight *ngIf = 'quotesArr[0].like > 1' >{{quotesArr[0].quote}}</p>
+</div>
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-10">
@@ -13,7 +16,7 @@
                 <li>
                     <div class="card" >
                         <div class="card-header">
-                             <span id="qt" appHighlight >"{{quote.quote}}"</span>  <span id="date"><small>{{quote.postDate|dateCount}} days ago</small> </span><br>
+                             <span id="qt" >"{{quote.quote}}"</span>  <span id="date"><small>{{quote.postDate|dateCount}} days ago</small> </span><br>
                             <button type="button" class="btn btn-secondary"  id="btnA"  (click) = 'move(i)'><small>View details</small></button>
                         </div>
                         <div class="card-body" *ngIf = 'quote.show'>
