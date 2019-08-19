@@ -64,4 +64,5 @@ li {
 #display {
   text-align: center;
   font-weight: bolder;
+  border-radius: 10px;
 }
