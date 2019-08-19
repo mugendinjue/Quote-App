@@ -37,6 +37,9 @@ export class QuotesComponent implements OnInit {
     }
   }
 
+
+
+
   likeDisAdd(willDlike,index){
     if( willDlike ){
       let disLikeNum = this.quotesArr[index].disLike;
@@ -62,7 +65,11 @@ export class QuotesComponent implements OnInit {
     this.quotesArr.push(quote);
   }
 
-
+  get sortQuotes() {
+   return this.quotesArr.sort((a, b) => {
+     return <any>new Date(b.like) - <any>new Date(a.like);
+   });
+ }
 
 
   constructor() { }
