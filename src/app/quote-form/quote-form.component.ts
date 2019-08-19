@@ -14,7 +14,7 @@ export class QuoteFormComponent implements OnInit {
 
   sendForm (){
     this.sendData.emit(this.newQuotes);
-    this.newQuotes = new Quotes (0,"","","",new Date(),0,0);
+    this.newQuotes = new Quotes (0," "," "," ",new Date(),0,0);
 
   }
 
